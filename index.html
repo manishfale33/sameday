@@ -224,14 +224,16 @@
         <div class="row">
           <div class="col-md-5">
             <div class="left-side">
-              <h3 class="section-title"><span>01</span>On-Board-Kurier</h3>
+              <h3 class="section-title"><span></span>On-Board-Kurier</h3>
               <p>Versenden oder empfangen Sie Waren aller Art von überall auf der Welt mit höchster Sicherheit
                 und Sicherheit
                 Zuverlässigkeit. </p>
               <ul>
                 <li>Same Day Kuriere bietet einen professionellen, effizienten Service</li>
-                <li>Zugeschnitten auf die spezifischen Anforderungen Ihres Unternehmens.</li>
-                <li>Unsere Dienstleistungen sind auf Sie zugeschnitten.</li>
+                <li>Zugeschnitten auf die spezifischen Anforderungen Ihres Unternehmens.</li><br>
+
+                <br>
+                </n>
               </ul>
             </div>
             <end left-side>
@@ -288,87 +290,73 @@
       </div>
       <!-- end container -->
     </section>
+
     <!-- end featured-services -->
     <form>
-    <section class="calculate-shipping">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-12">
-            <h3 class="section-title"><span>02</span> </h3>
-            <form>
-              <div class="row">
-                <div class="col-md-6 col-sm-6">
-                  <div class="form-group radio-field">
-                    <label>Distance</label>
-                    <span class="holder">
-                      <input type="radio" checked>
-                      Domestic</span> <span class="holder">
-                      <input type="radio">
-                      International</span>
+      <section class="calculate-shipping">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-12">
+              <h3 class="section-title"><span></span></h3>
+              <br>
+              <form id="registration-form" name="registration-form">
+                <div class="quote-form">
+                  <div class="hgroup">
+                    <h1 class="section-title">ERHALTEN EIN KOSTENLOSES ANGEBOT</h1>
+                    <p>Wir nutzen immer die besten und schnellsten Flotten</p>
                   </div>
-                  <!-- end form-group -->
-                  <div class="form-group">
-                    <label>Weight</label>
-                    <input type="text">
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <input type="text" class="form-control" name="R_Company" placeholder="Name der Firma">
+                    </div>
+                    <div class="col-xs-6">
+                      <input type="text" class="form-control" name="R_Email" placeholder="E-Mail-Adresse">
+                    </div>
+                    <div class="col-xs-6">
+                      <input type="text" class="form-control" name="R_Name" placeholder="Name">
+                    </div>
+                    <div class="col-xs-6">
+                      <input type="text" class="form-control" name="R_Contactno" placeholder="Telefon-Nr.">
+                    </div>
+                    <div class="col-xs-6">
+                      <input type="text" class="form-control" name="R_From" id="R_From" placeholder="Herkunft">
+                    </div>
+                    <div class="col-xs-6">
+                      <input type="text" class="form-control" name="R_To" placeholder="Ziel">
+                    </div>
+                    <div class="col-xs-6">
+                      <input type="text" class="form-control" name="R_Weight" placeholder="Gewicht">
+                    </div>
+                    <div class="col-xs-6">
+                      <input type="text" class="form-control" name="R_Size" placeholder="Größe (L*B*H in CM/MM)">
+                    </div>
+                    <div class="col-xs-6">
+                      <input type="date" class="form-control" name="R_Date" placeholder="Datum">
+                    </div>
+                    <div class="col-xs-6">
+                      <input type="hidden" class="form-control" name="operation" value="Requestquote">
+                      <button type="submit" id="registrationbtn">SENDEN SIE MIR ZITAT</button>
+                    </div>
+                    <div class="col-xs-12">
+                      <div id="success" class="text-danger"></div>
+                    </div>
                   </div>
-                  <!-- end form-group -->
-                  <div class="form-group size-field">
-                    <label>Cargo Size</label>
-                    <input type="text" placeholder="cm">
-                    <span>x</span>
-                    <input type="text" placeholder="cm">
-                  </div>
-                  <!-- end form-group -->
-
-                  <div class="form-group">
-                    <label>Fragile</label>
-                    <select class="selectpicker">
-                      <option>YES</option>
-                      <option>NO</option>
-                    </select>
-                  </div>
-                  <!-- end form-group -->
                 </div>
-                <!-- col-6 -->
-                <div class="col-md-6 col-sm-6">
-                  <div class="form-group">
-                    <label>Extra Services</label>
-                    <span class="full-block">
-                      <input type="checkbox" checked>
-                      Quick Delivery</span> <span class="full-block">
-                      <input type="checkbox">
-                      Warranty</span> <span class="full-block">
-                      <input type="checkbox">
-                      Gift Box</span>
-                  </div>
-                  <!-- end form-group -->
-                  <div class="form-group"> <small>The Field below will show the double of the number about $</small>
-                  </div>
-                  <!-- end form-group -->
-                  <div class="form-group">
-                    <input type="text" value="$200" disabled>
-                  </div>
-                  <!-- end form-group -->
-                  <div class="form-group">
-                    <button type="submit">CALCULATE</button>
-                  </div>
-                  <!-- end form-group -->
-                </div>
-                <!-- col-6 -->
-              </div>
-              <!-- end row -->
-            </form>
+              </form>
+            </div>
+            <!-- end col-8 -->
+            <div class="col-md-4 hidden-sm hidden-xs">
+              <figure>
+                <img src="images/calculate-man.jpg" alt="Image">
+              </figure>
+            </div>
+            <!-- end col-4 -->
           </div>
-          <!-- end col-8 -->
-          <div class="col-md-4 hidden-sm hidden-xs">
-            <figure> <img src="images/calculate-man.jpg" alt="Image"> </figure>
-          </div>
-          <!-- end col-4 -->
+          <!-- end row -->
         </div>
-        <!-- end row -->
-      </div>
-      <!-- end container -->
-    </section>
+        <!-- end container -->
+      </section>
+
     </form>
     <!-- end calculate-shipping -->
     <section class="steps-features">
@@ -376,7 +364,7 @@
         <div class="row spacing">
           <div class="col-md-4 col-sm-4 spacing">
             <div class="step-box bg-1"> <span>01</span>
-              <h3>AN BORDKURIER  </h3>
+              <h3>AN BORDKURIER </h3>
               <h5></h5>
               <a href="#">READ MORE</a>
             </div>
@@ -401,7 +389,7 @@
             <!-- end step-box -->
           </div>
           <!-- end col-4 -->
-          
+
         </div>
         <!-- end row -->
       </div>
@@ -411,54 +399,50 @@
 
     <section class="latest-news">
       <div class="container">
-        <div class="row spacing">
-          <div class="col-xs-12 spacing"><br>
-            <h3 class="section-title"><span></span>LATEST NEWS</h3>
+        <div class="Zeilenabstand">
+          <div class="col-xs-12-Abstand"><br>
+            <h3 class="section-title"><span></span>NEUESTE NACHRICHTEN</h3>
           </div>
-          <!-- end col-12 -->
-          <div class="col-md-4 col-sm-6 spacing">
+          <!--end col-12 -->
+          <div class="col-md-4 col-sm-6-Abstand">
             <div class="news-box">
               <figure><img src="images/news1.jpg" alt="Image"><span class="date">02/OCT</span></figure>
               <div class="news-caption">
-                <h4>Social and demographic information</h4>
-                <p>There are no hidden costs associated with our transportation services</p>
-                <a href="#">READ MORE</a>
+                <h4>Soziale und demografische Informationen</h4>
+                <p>Mit unseren Transportdienstleistungen sind keine versteckten Kosten verbunden</p>
+                <a href="#">WEITER LESEN</a>
               </div>
-              <!-- end news-caption -->
+              <!--end news-caption -->
             </div>
-            <!-- end news-box -->
+            <!--end news-box -->
           </div>
-          <!-- end col-4 -->
-          <div class="col-md-4 col-sm-6 hidden-xs spacing">
+          <!--end col-4 -->
+          <div class="col-md-4 col-sm-6 versteckter-xs-Abstand">
             <div class="news-box">
               <div class="news-caption">
-                <h4>Team member to discuss our meeting</h4>
-                <p>Offers you peace-of-mind that we’ll be on-hand to help whenever you need us.</p>
-                <a href="#">READ MORE</a>
+                <h4>Teammitglied, um unser Treffen zu besprechen</h4>
+                <p>Gibt Ihnen die Gewissheit, dass wir für Sie da sind, wann immer Sie uns brauchen.</p>
+                <a href="#">WEITER LESEN</a>
               </div>
-              <!-- end news-caption -->
+              <!--end news-caption -->
               <figure><img src="images/news2.jpg" alt="Image"><span class="date">02/OCT</span></figure>
             </div>
-            <!-- end news-box -->
+            <!--end news-box -->
           </div>
-          <!-- end col-4 -->
-          <div class="col-md-4 hidden-sm spacing">
+          <!--end col-4 -->
+          <div class="col-md-4 versteckter-sm-Abstand">
             <div class="news-box">
               <figure><img src="images/news3.jpg" alt="Image"><span class="date">02/OCT</span></figure>
               <div class="news-caption">
-                <h4>Financial Institutions changes control</h4>
-                <p>As a company, we believe in operating as independent national carriers.</p>
-                <a href="#">READ MORE</a>
+                <h4>Finanzinstitute wechseln die Kontrolle</h4>
+                <p>Als Unternehmen glauben wir daran, als unabhängige nationale Fluggesellschaften zu agieren.</p>
+                <a href="#">WEITER LESEN</a>
               </div>
-              <!-- end news-caption -->
-            </div>
-            <!-- end news-box -->
-          </div>
-          <!-- end col-4 -->
-        </div>
-        <!-- end row -->
-      </div>
-      <!-- end container -->
+              <!--end news-caption -->
+            </div> <!--end news-box -->
+          </div> <!--und col-4 -->
+        </div> <!--in row -->
+      </div> <!--Endcontainer -->
     </section>
     <!-- end latest-news -->
 
